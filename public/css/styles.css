@@ -42,23 +42,25 @@ main {width: 90vw; margin: auto;}
 .main-navbar ul a {text-decoration: none; color: #222222; display: inline-block; padding: 5px 0; font-size: 17px;}
 .main-navbar ul a:hover {text-decoration: none; color:#1758BB;}
 
-#ultimaVisita article, #ofertas article {background-color: #fff; text-align: center; margin-bottom: 10px; padding: 15px; }
+#ultimaVisita article, #ofertas article {background-color: #fff; text-align: center; margin-bottom: 10px; padding: 15px; transition: all 0.3s; }
 #ultimaVisita h3, #ofertas h3 {font-size: 24px; color: #666; font-weight: 500; margin: 25px 0 10px 0; }
 #ultimaVisita img, #ofertas img {width: 100%; }
 .precios{font-size: 18px; text-align: left; width: 30%;}
 .descuentos{font-size: 16px; color: #39b54a; text-align: left; width: 70%;}
-.descripciones{font-size: 16px; text-align: left; padding-top: 5px; }
-
-.azul{color: #1758BB; font-size: 2em; margin: 30px 0 15px 0;}
+.descripciones{font-size: 16px; text-align: left; padding-top: 5px; color:#fff;}
+#ultimaVisita article:hover .descripciones{color:#000;}
+#ofertas article:hover .descripciones{color:#000;}
+#ultimaVisita article:hover, #ofertas article:hover {
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+.azul{color: #1758BB; font-size: 2em; margin: 30px 0 15px 0; transition: all 0.3s;}
+.azul:hover{color: #EAC926}
 .verde{color: #39b54a; font-size: 16px; display: flex; text-align:right; width:70%; margin-top: 10px; }
 
-main section article .description{
-    display: block;
-}
-
+/* 
 main section article{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
-}
+}*/
 article div.main-article{
     width: 100%;
     display: flex;
@@ -86,7 +88,7 @@ article div.main-article i{
     footer section {text-align: center; margin: 25px; }   
     footer h4{color: #666; font-size: 18px; }
     footer p{color: #666; max-width: 75%; margin: auto;}
-    footer h5{color: #666; text-align: left; font-size: 10px; font-weight: 500; margin: 30px 0 15px 15px; padding-bottom: 25px; display: block; }
+    footer h5{color: #666; text-align: left; font-size: 10px; font-weight: 500; margin: 30px 0 15px 15px; padding-bottom: 25px; display: block; width: 100%;}
 
 /* form */
 
@@ -173,6 +175,7 @@ input:focus {
     padding: 5px 10px;
     border-radius: 5px;
 }
+.boton:hover {background-color: #0022AA;}
 .cien{
     width: 100%;
 }
@@ -290,4 +293,6 @@ main section div.products article{
     main section div.products article{
         width: 22%;
     }
+    .ico-footer {width: 31%; display:inline-block; }
+    footer h5{margin-left: 55px;}
 }
