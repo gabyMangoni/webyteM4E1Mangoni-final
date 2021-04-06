@@ -18,6 +18,7 @@
 
 html, body {
     height: 100%;
+    overflow-x: hidden;
   }
 
 body {
@@ -46,7 +47,7 @@ header {background-color: #EAC926; padding: 20px;}
     margin-top: 15px;
 }
 
-main {width: 90vw; margin: auto;}  
+main {width: 90%; margin: auto;}  
 .main-header-top-bar {width: 90%; display: flex; justify-content: space-between; flex-wrap: wrap;}
 #top-logo { flex: 1 1 50%;}
 #top-logo .logo {width: 100%;}
@@ -259,6 +260,7 @@ input:focus {
     outline:none;
     background: #d6d6d6;
   }
+
     
 @media (min-width: 768px){
     .main-header-top-bar {
